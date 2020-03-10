@@ -16,19 +16,15 @@ store Todo {
   }
 
   fun localStorageState : Array(String) {
-    Debug.log(data)
+    data
   } where {
     object = 
       Storage.Local.get(localStorageKey)
         |> Result.withDefault("[]")
         |> Json.parse()
+        |> Maybe.withDefault(encode todos)
 
-    result = case (object) {
-      Maybe::Just result => result
-                         => encode todos
-    }
-
-     data = decode result as Array(String)
+     data = decode object as Array(String)
       |> Result.withDefault(todos)
   }
 
