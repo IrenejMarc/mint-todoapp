@@ -17,7 +17,7 @@ component AddTodoInput {
       |> Dom.setValue("")
   }
 
-  fun add(event : Html.Event) : Promise(Never, Void) {
+  fun add(event : Html.Event) : void {
     sequence {
       Html.Event.preventDefault(event)
       clearInput()

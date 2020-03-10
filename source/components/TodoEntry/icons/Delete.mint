@@ -8,7 +8,7 @@ component TodoEntry.Icons.Delete {
     &:after { content: "", clear: both; }
   }
 
-  fun removeTodo(event : Html.Event) : Promise(Never, Void) {
+  fun removeTodo(event : Html.Event) : void {
     deleteTodo(todo)
   }
 
