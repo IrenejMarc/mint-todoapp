@@ -1,5 +1,5 @@
 component Main {
-  connect Todo exposing { todos }
+  connect Router exposing { page }
 
   style base {
     font-family: monospace;
@@ -16,14 +16,15 @@ component Main {
     width: 100vw;
 
     h2 { margin-top: 0; margin-bottom: 0; }
+    * { box-sizing: border-box; }
   }
 
   fun render : Html {
-    <div::base>
-      <h2>"Todo"</h2>
-
-      <TodoList />
-      <AddTodoInput />
+    <div::base class="app-wrapper">
+      case (page) {
+        Page::Root     => <Pages.Root />
+        Page::ViewTodo => <Pages.ViewTodo />
+      }
     </div>
   }
 }

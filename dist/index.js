@@ -4,7 +4,7 @@ var Mint=function(){"use strict";var t,e,n,r,o,i,a={},s=[],u=/acit|ex(?:s|g|n|p|
   const mint = Mint(_enums)
 
   const _normalizeEvent = function (event) {
-    return U.bc(mint.normalizeEvent(event))
+    return Y.au(mint.normalizeEvent(event))
   };
 
   const _R = mint.createRecord;
@@ -44,10 +44,10 @@ var Mint=function(){"use strict";var t,e,n,r,o,i,a={},s=[],u=/acit|ex(?:s|g|n|p|
   }
 
   const _s = (item, callback) => {
-    if (item instanceof AB) {
+    if (item instanceof AN) {
       return item
-    } else if (item instanceof W) {
-      return new W(callback(item._0))
+    } else if (item instanceof AA) {
+      return new AA(callback(item._0))
     } else {
       return callback(item)
     }
@@ -55,98 +55,156 @@ var Mint=function(){"use strict";var t,e,n,r,o,i,a={},s=[],u=/acit|ex(?:s|g|n|p|
 
   class DoError extends Error {}
 
-  class AB extends _E{constructor(){super();this.length = 0}};class W extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class AH extends _E{constructor(){super();this.length = 0}};class AI extends _E{constructor(){super();this.length = 0}};class AK extends _E{constructor(){super();this.length = 0}};class AJ extends _E{constructor(){super();this.length = 0}};class AG extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class AF extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};const B = _R({hostname:["hostname",Decoder.string],protocol:["protocol",Decoder.string],origin:["origin",Decoder.string],search:["search",Decoder.string],path:["path",Decoder.string],hash:["hash",Decoder.string],host:["host",Decoder.string],port:["port",Decoder.string]});const C = _R({});const D = _R({});const E = _R({});const F = _R({});const G = _R({});const H = _R({});const I = _R({});const J = _R({});const K = _R({height:["height",Decoder.number],bottom:["bottom",Decoder.number],width:["width",Decoder.number],right:["right",Decoder.number],left:["left",Decoder.number],top:["top",Decoder.number],x:["x",Decoder.number],y:["y",Decoder.number]});const L = _R({});const M = _R({});const N = _R({status:["status",Decoder.number],body:["body",Decoder.string]});const O = _R({});const P = _R({caseInsensitive:["caseInsensitive",Decoder.boolean],multiline:["multiline",Decoder.boolean],unicode:["unicode",Decoder.boolean],global:["global",Decoder.boolean],sticky:["sticky",Decoder.boolean]});const Q = _R({submatches:["submatches",Decoder.array(Decoder.string)],match:["match",Decoder.string],index:["index",Decoder.number]});_program.addRoutes([{handler:(()=>{S.bz()}),decoders:[],mapping:[],path:`*`}]);const AA=new(class extends _M{ac(af,ad){return (()=>{let ae = ad;if(ae instanceof AB){return af}if(ae instanceof W){const ag = ae._0;return ag}})()}});const AC=new(class extends _M{ah(ai){return ((() => {
-      try {
-        return new W((JSON.parse(ai)))
-      } catch (error) {
-        return new AB()
-      }
-    })())}aj(ak){return (JSON.stringify(ak))}});const AD=new(class extends _M{al(an,ao){return AE.am((localStorage), an, ao)}ap(ar){return AE.aq((localStorage), ar)}});const AE=new(class extends _M{am(as,at,au){return ((() => {
-      try {
-        as.setItem(at, au)
-        return new AF(null)
-      } catch (error) {
-        switch(error.name) {
-          case 'SecurityError':
-            return new AG(new AH())
-          case 'QUOTA_EXCEEDED_ERR':
-            return new AG(new AI())
-          case 'QuotaExceededError':
-            return new AG(new AI())
-          case 'NS_ERROR_DOM_QUOTA_REACHED':
-            return new AG(new AI())
-          default:
-            return new AG(new AJ())
-        }
-      }
-    })())}aq(av,aw){return ((() => {
-      try {
-        let value = av.getItem(aw)
+  class AN extends _E{constructor(){super();this.length = 0}};class AA extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class AS extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class AR extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class AU extends _E{constructor(){super();this.length = 0}};class AV extends _E{constructor(){super();this.length = 0}};class AX extends _E{constructor(){super();this.length = 0}};class AW extends _E{constructor(){super();this.length = 0}};class AH extends _E{constructor(){super();this.length = 0}};class AF extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class AG extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class AK extends _E{constructor(){super();this.length = 0}};class AL extends _E{constructor(){super();this.length = 0}};const B = _R({height:["height",Decoder.number],bottom:["bottom",Decoder.number],width:["width",Decoder.number],right:["right",Decoder.number],left:["left",Decoder.number],top:["top",Decoder.number],x:["x",Decoder.number],y:["y",Decoder.number]});const C = _R({});const D = _R({});const E = _R({status:["status",Decoder.number],body:["body",Decoder.string]});const F = _R({});const G = _R({});const H = _R({});const I = _R({});const J = _R({});const K = _R({});const L = _R({});const M = _R({});const N = _R({});const O = _R({caseInsensitive:["caseInsensitive",Decoder.boolean],multiline:["multiline",Decoder.boolean],unicode:["unicode",Decoder.boolean],global:["global",Decoder.boolean],sticky:["sticky",Decoder.boolean]});const P = _R({submatches:["submatches",Decoder.array(Decoder.string)],match:["match",Decoder.string],index:["index",Decoder.number]});const Q = _R({hostname:["hostname",Decoder.string],protocol:["protocol",Decoder.string],origin:["origin",Decoder.string],search:["search",Decoder.string],path:["path",Decoder.string],hash:["hash",Decoder.string],host:["host",Decoder.string],port:["port",Decoder.string]});const R = _R({id:["id",Decoder.number],text:["text",Decoder.string]});_program.addRoutes([{handler:(()=>{(async()=>{let _ = null;try{await Promise.all([(async()=>{await AJ.dn(new AK())})(),(async()=>{await T.dm()})()])}catch(_error){if(!(_error instanceof DoError)){console.warn(`Unhandled error in parallel expression:`);console.warn(_error)}};return _})()}),decoders:[],mapping:[],path:`/`},{handler:((dq)=>{(async()=>{let _ = null;try{await (async()=>{let _ = null;try{await Promise.all([(async()=>{await AJ.dn(new AL())})(),(async()=>{await T.dm()})()])}catch(_error){if(!(_error instanceof DoError)){console.warn(`Unhandled error in parallel expression:`);console.warn(_error)}};return _})();_ = await AE.cm(dq)}catch(_error){if(!(_error instanceof DoError)){console.warn(`Unhandled error in sequence expression:`);console.warn(_error)}};return _})()}),decoders:[Decoder.number],mapping:['id'],path:`/todo/:id`}]);const AM=new(class extends _M{aj(ak){return ((() => {
+      if (ak.length) {
+        const item = ak[Math.floor(Math.random() * ak.length)]
 
-        if (typeof value === "string") {
-          return new AF((value))
-        } else {
-          return new AG(new AK())
-        }
-      } catch (error) {
-        switch(error.name) {
-          case 'SecurityError':
-            return new AG(new AH())
-          default:
-            return new AG(new AJ())
-        }
+        return new AA((item))
+      } else {
+        return new AN()
       }
-    })())}});const AL=new(class extends _M{ax(bb,ay){return (()=>{let az = ay;if(az instanceof AF){const ba = az._0;return ba}if(az instanceof AG){return bb}})()}});const U=new(class extends _M{bc(bd){return new L({bubbles:(bd.bubbles),cancelable:(bd.cancelable),currentTarget:(bd.currentTarget),defaultPrevented:(bd.defaultPrevented),eventPhase:(bd.eventPhase),isTrusted:(bd.isTrusted),target:(bd.target),timeStamp:(bd.timeStamp),type:(bd.type),data:(bd.data),altKey:(bd.altKey),charCode:(bd.charCode),ctrlKey:(bd.ctrlKey),key:(bd.key),keyCode:(bd.keyCode),locale:(bd.locale),location:(bd.location),metaKey:(bd.metaKey),repeat:(bd.repeat),shiftKey:(bd.shiftKey),which:(bd.which),button:(bd.button),buttons:(bd.buttons),clientX:(bd.clientX),clientY:(bd.clientY),pageX:(bd.pageX),pageY:(bd.pageY),screenX:(bd.screenX),screenY:(bd.screenY),detail:(bd.detail),deltaMode:(bd.deltaMode),deltaX:(bd.deltaX),deltaY:(bd.deltaY),deltaZ:(bd.deltaZ),animationName:(bd.animationName),pseudoElement:(bd.pseudoElement),propertyName:(bd.propertyName),elapsedTime:(bd.elapsedTime),event:bd})}e(be){return (be.event.preventDefault())}});const T=new(class extends _M{n(bf){return (document.createElement(bf))}k(bg){return ((() => {
-      let element = document.getElementById(bg)
+    })())}al(ao,an,am){return (am.reduce(an, ao))}});const X=new(class extends _M{t(ap){return (document.createElement(ap))}q(aq){return ((() => {
+      let element = document.getElementById(aq)
 
       if (element) {
-        return new W((element))
+        return new AA((element))
       } else {
-        return new AB()
+        return new AN()
       }
-    })())}i(bh){return ((() => {
-      let value = bh.value
+    })())}o(ar){return ((() => {
+      let value = ar.value
 
       if (typeof value === "string") {
         return value
       } else {
         return ""
       }
-    })())}b(bj,bi){return ((bi.value = bj) && bi)}});const AM=new(class extends _M{bk(bm,bl){return (bl.filter(bm))}bn(bo){return ((() => {
-      if (bo.length) {
-        const item = bo[Math.floor(Math.random() * bo.length)]
-
-        return new W((item))
-      } else {
-        return new AB()
+    })())}i(at,as){return ((as.value = at) && as)}});const Y=new(class extends _M{au(av){return new C({bubbles:(av.bubbles),cancelable:(av.cancelable),currentTarget:(av.currentTarget),defaultPrevented:(av.defaultPrevented),eventPhase:(av.eventPhase),isTrusted:(av.isTrusted),target:(av.target),timeStamp:(av.timeStamp),type:(av.type),data:(av.data),altKey:(av.altKey),charCode:(av.charCode),ctrlKey:(av.ctrlKey),key:(av.key),keyCode:(av.keyCode),locale:(av.locale),location:(av.location),metaKey:(av.metaKey),repeat:(av.repeat),shiftKey:(av.shiftKey),which:(av.which),button:(av.button),buttons:(av.buttons),clientX:(av.clientX),clientY:(av.clientY),pageX:(av.pageX),pageY:(av.pageY),screenX:(av.screenX),screenY:(av.screenY),detail:(av.detail),deltaMode:(av.deltaMode),deltaX:(av.deltaX),deltaY:(av.deltaY),deltaZ:(av.deltaZ),animationName:(av.animationName),pseudoElement:(av.pseudoElement),propertyName:(av.propertyName),elapsedTime:(av.elapsedTime),event:av})}l(aw){return (aw.event.preventDefault())}});const AO=new(class extends _M{ax(ay){return ((() => {
+      try {
+        return new AA((JSON.parse(ay)))
+      } catch (error) {
+        return new AN()
       }
-    })())}bp(bq,br){return ([].concat(bq).concat(br))}bs(bu){return AM.bt([], AM.bp, bu)}bt(bx,bw,bv){return (bv.reduce(bw, bx))}});const V=new(class extends _M{j(){let by = [`Feed the dog`, `Throw the cat out the window`];return AA.ac(`Feed the dog`, AM.bn(by))}});class R extends _C{get c(){return (()=>{let l = T.k(`add_todo_input`);if(l instanceof W){const m = l._0;return m}else{return T.n(`input`)}})()}g (...params) { return S.o(...params); }componentWillUnmount(){S._unsubscribe(this)}componentDidMount(){S._subscribe(this)}a(){return T.b(``, this.c)}d(f){let h = T.i(this.c);return (async()=>{let _ = null;try{await U.e(f);await this.a();_ = await this.g(h)}catch(_error){if(!(_error instanceof DoError)){console.warn(`Unhandled error in sequence expression:`);console.warn(_error)}};return _})()}render(){return _h("form", {"onSubmit":(event => (this.d)(_normalizeEvent(event))),className:`a`}, [_h("input", {"tabindex":`0`,"id":`add_todo_input`,"type":`text`,"placeholder":V.j()})])}};;class X extends _C{constructor(props){super(props);this._d({r:[null,``]})}get u(){return S.t;}v (...params) { return S.o(...params); }q (...params) { return S.w(...params); }componentWillUnmount(){S._unsubscribe(this)}componentDidMount(){S._subscribe(this)}p(s){return this.q(this.r)}render(){return _h("span", {"onClick":(event => (this.p)(_normalizeEvent(event))),className:`b`}, [`X`])}};;class Y extends _C{get z(){return S.t;}aa (...params) { return S.o(...params); }componentWillUnmount(){S._unsubscribe(this)}componentDidMount(){S._subscribe(this)}render(){return _h("ul", {className:`c`}, [(()=>{const _0 = [];const _1 = this.z;for(let x of _1){_0.push(_h(Z, {y:x}))};return _0})()])}};;class Z extends _C{constructor(props){super(props);this._d({y:[null,``]})}render(){return _h("li", {className:`d`}, [_h("span", {className:`e`}, [this.y]),_h(X, {r:this.y})])}};;class A extends _C{get ab(){return S.t;}componentWillUnmount(){S._unsubscribe(this)}componentDidMount(){S._subscribe(this)}render(){return _h("div", {className:`f`}, [_h("h2", {}, [`Todo`]),$a(),$b()])}};;const $a=_m(() => _h(Y, {}));const $b=_m(() => _h(R, {}));const S=new(class extends _S{constructor(){super();this.state={ca:false,ce:`__mint_todo-app__todos`,t:[]}}get ca(){return this.state.ca;}get ce(){return this.state.ce;}get t(){return this.state.t;}bz(){return (!this.ca ? (async()=>{let _ = null;try{await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({t:S.cb()})), _resolve)
-}));_ = await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({ca:true})), _resolve)
-}))}catch(_error){if(!(_error instanceof DoError)){console.warn(`Unhandled error in sequence expression:`);console.warn(_error)}};return _})() : new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({})), _resolve)
-})))}cb(){let cd = AA.ac(_encode(this.t), AC.ah(AL.ax(`[]`, AD.ap(this.ce))));let cc = AL.ax(this.t, Decoder.array(Decoder.string)(cd));return cc}cf(){return AD.al(this.ce, AC.aj(_encode(this.t)))}o(cg){return (async()=>{let _ = null;try{await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({t:AM.bs([this.t, [cg]])})), _resolve)
-}));let _1 = S.cf();if(_1 instanceof Err){let _error = _1._0;let ch = _error;_=new AG(ch);throw new DoError()};_ = _1._0}catch(_error){if(!(_error instanceof DoError)){console.warn(`Unhandled error in sequence expression:`);console.warn(_error)}};return _})()}w(cj){return (async()=>{let _ = null;try{await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({t:AM.bk(((ci)=>{return !_compare(ci, cj)}), this.t)})), _resolve)
-}));let _1 = S.cf();if(_1 instanceof Err){let _error = _1._0;let ck = _error;_=new AG(ck);throw new DoError()};_ = _1._0}catch(_error){if(!(_error instanceof DoError)){console.warn(`Unhandled error in sequence expression:`);console.warn(_error)}};return _})()}});_insertStyles(`
-.b {
+    })())}az(ba){return (JSON.stringify(ba))}});const AC=new(class extends _M{bb(){return (new Map())}bc(be,bf,bd){return ((() => {
+      const newMap = new Map()
+
+      for (let item of bd) {
+        newMap.set(item[0], item[1])
+      }
+
+      newMap.set(be, bf)
+
+      return newMap
+    })())}bg(bi,bh){return ((() => {
+      if (bh.has(bi)) {
+        return new AA((bh.get(bi)))
+      } else {
+        return new AN()
+      }
+    })())}bj(bl,bk){return ((() => {
+      const newMap = new Map()
+
+      for (let item of bk) {
+        if (!_compare(item[0], bl)) {
+          newMap.set(item[0], item[1])
+        }
+      }
+
+      return newMap
+    })())}w(bm){return (Array.from(bm.values()))}bn(bo){return (bo.size)}});const AP=new(class extends _M{bp(bs,bq){return (()=>{let br = bq;if(br instanceof AN){return bs}if(br instanceof AA){const bt = br._0;return bt}})()}});const AQ=new(class extends _M{bu(by,bv){return (()=>{let bw = bv;if(bw instanceof AR){const bx = bw._0;return bx}if(bw instanceof AS){return by}})()}});const AT=new(class extends _M{bz(ca,cb,cc){return ((() => {
+      try {
+        ca.setItem(cb, cc)
+        return new AR(null)
+      } catch (error) {
+        switch(error.name) {
+          case 'SecurityError':
+            return new AS(new AU())
+          case 'QUOTA_EXCEEDED_ERR':
+            return new AS(new AV())
+          case 'QuotaExceededError':
+            return new AS(new AV())
+          case 'NS_ERROR_DOM_QUOTA_REACHED':
+            return new AS(new AV())
+          default:
+            return new AS(new AW())
+        }
+      }
+    })())}cd(ce,cf){return ((() => {
+      try {
+        let value = ce.getItem(cf)
+
+        if (typeof value === "string") {
+          return new AR((value))
+        } else {
+          return new AS(new AX())
+        }
+      } catch (error) {
+        switch(error.name) {
+          case 'SecurityError':
+            return new AS(new AU())
+          default:
+            return new AS(new AW())
+        }
+      }
+    })())}});const AY=new(class extends _M{cg(ch,ci){return AT.bz((localStorage), ch, ci)}cj(ck){return AT.cd((localStorage), ck)}});const Z=new(class extends _M{p(){let cl = [`Feed the dog`, `Throw the cat out the window`, `Check on the alligator`, `Feed the crows`, `Stockpile for COVID-19`, `Bark loudly`, `Clean your room`, `Take a shower`, `Preach about lobsters`];return AP.bp(`Feed the dog`, AM.aj(cl))}});const U=new(class extends _M{f(){return new R({id:0,text:``})}});class S extends _C{constructor(props){super(props);this._d({c:[null,U.f()]})}b (...params) { return T.e(...params); }componentWillUnmount(){T._unsubscribe(this)}componentDidMount(){T._subscribe(this)}a(d){return this.b(this.c.id)}render(){return _h("span", {"onClick":(event => (this.a)(_normalizeEvent(event))),className:`a`}, [`X`])}};;class V extends _C{constructor(props){super(props);this._d({g:[null,U.f()]})}render(){return _h("li", {className:`b`}, [_h("a", {"href":`/todo/${this.g.id}`}, [_h("span", {className:`c`}, [this.g.text])]),_h(S, {c:this.g})])}};;class W extends _C{get j(){return (()=>{let r = X.q(`add_todo_input`);if(r instanceof AA){const s = r._0;return s}else{return X.t(`input`)}})()}n (...params) { return T.u(...params); }componentWillUnmount(){T._unsubscribe(this)}componentDidMount(){T._subscribe(this)}h(){return X.i(``, this.j)}k(m){return (async()=>{let _ = null;try{await Y.l(m);await this.n(X.o(this.j));_ = await this.h()}catch(_error){if(!(_error instanceof DoError)){console.warn(`Unhandled error in sequence expression:`);console.warn(_error)}};return _})()}render(){return _h("form", {"onSubmit":(event => (this.k)(_normalizeEvent(event))),className:`d`}, [_h("input", {"tabindex":`0`,"id":`add_todo_input`,"type":`text`,"placeholder":Z.p()})])}};;class AB extends _C{get x(){return T.y;}componentWillUnmount(){T._unsubscribe(this)}componentDidMount(){T._subscribe(this)}render(){return _h("ul", {className:`e`}, [(()=>{const _0 = [];const _1 = AC.w(this.x);for(let v of _1){_0.push(_h(V, {g:v}))};return _0})()])}};;class AD extends _C{get ae(){return AE.ad;}get z(){return AE.af;}componentWillUnmount(){AE._unsubscribe(this)}componentDidMount(){AE._subscribe(this)}render(){return _h("div", {className:`f`}, [_h("a", {"href":`/`,className:`h`}, [`Back`]),(()=>{let aa = this.z;if(aa instanceof AF){const ab = aa._0;return _h(React.Fragment, {}, [_h("h2", {}, [`Todo #${ab.id}`]),_h("span", {className:`g`}, [ab.text])])}if(aa instanceof AG){const ac = aa._0;return _h("div", {className:`i`}, [ac])}if(aa instanceof AH){return _h("h2", {}, [`Loading`])}})()])}};;class AI extends _C{render(){return _h("main", {className:`j`}, [_h("h2", {}, [`Todo`]),$a(),$b()])}};;class A extends _C{get ag(){return AJ.ai;}componentWillUnmount(){AJ._unsubscribe(this)}componentDidMount(){AJ._subscribe(this)}render(){return _h("div", {className:`app-wrapper` + ` k`}, [(()=>{let ah = this.ag;if(ah instanceof AK){return $c()}if(ah instanceof AL){return $d()}})()])}};;const $a=_m(() => _h(AB, {}));const $b=_m(() => _h(W, {}));const $c=_m(() => _h(AI, {}));const $d=_m(() => _h(AD, {}));const AE=new(class extends _S{constructor(){super();this.state={af:new AH()}}get af(){return this.state.af;}get ad(){return (()=>{let cr = this.af;if(cr instanceof AF){const cs = cr._0;return new AA(cs)}else{return new AN()}})()}cm(co){return (async()=>{let _ = null;try{await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({af:new AH()})), _resolve)
+}));_ = await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({af:(()=>{let cp = T.cn(co);if(cp instanceof AA){const cq = cp._0;return new AF(cq)}else{return new AG(`Cannot find Todo #${co}`)}})()})), _resolve)
+}))}catch(_error){if(!(_error instanceof DoError)){console.warn(`Unhandled error in sequence expression:`);console.warn(_error)}};return _})()}});const T=new(class extends _S{constructor(){super();this.state={da:false,y:AC.bb()}}get da(){return this.state.da;}get y(){return this.state.y;}u(cw){let ct = new R({id:AC.bn(this.y) + 1,text:cw});return (async()=>{let _ = null;try{await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({y:AC.bc(ct.id, ct, this.y)})), _resolve)
+}));let _1 = T.cu();if(_1 instanceof Err){let _error = _1._0;let cv = _error;_=new AS(cv);throw new DoError()};_ = _1._0}catch(_error){if(!(_error instanceof DoError)){console.warn(`Unhandled error in sequence expression:`);console.warn(_error)}};return _})()}e(cx){return (async()=>{let _ = null;try{await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({y:AC.bj(cx, this.y)})), _resolve)
+}));let _1 = T.cu();if(_1 instanceof Err){let _error = _1._0;let cy = _error;_=new AS(cy);throw new DoError()};_ = _1._0}catch(_error){if(!(_error instanceof DoError)){console.warn(`Unhandled error in sequence expression:`);console.warn(_error)}};return _})()}cn(cz){return AC.bg(cz, this.y)}cu(){return (this.da ? AY.cg(`todos`, T.db()) : new AR(null))}db(){let dc = AC.w(this.y);return AO.az((_encode(dc)))}dd(di){let dh = AO.ax(di);let dg = (()=>{let dj = dh;if(dj instanceof AA){const dk = dj._0;return AQ.bu([], Decoder.array(((_)=>R.decode(_)))(dk))}if(dj instanceof AN){return []}})();return AM.al(AC.bb(), ((df, de)=>{return AC.bc(de.id, de, df)}), dg)}dl(){return T.dd(AQ.bu(`[]`, AY.cj(`todos`)))}dm(){return (this.da ? new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({})), _resolve)
+})) : (async()=>{let _ = null;try{await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({y:T.dl()})), _resolve)
+}));_ = await new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({da:true})), _resolve)
+}))}catch(_error){if(!(_error instanceof DoError)){console.warn(`Unhandled error in sequence expression:`);console.warn(_error)}};return _})())}});const AJ=new(class extends _S{constructor(){super();this.state={ai:new AK()}}get ai(){return this.state.ai;}dn(dp){return new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({ai:dp})), _resolve)
+}))}});_insertStyles(`
+.a {
   cursor: pointer;
   float: right;
 }
 
-.b:after {
+.a:after {
   content: "", clear: both;
 }
 
-.c {
+.b {
+  font-size: 2rem;
+}
+
+.d input {
+  width: 100%;
+  height: 3rem;
+  border: 1px solid black;
   padding: 4px;
+  border-radius: 6px;
+  line-height: 3rem;
+}
+
+.e {
+  padding: 8px;
   list-style: none;
   border: 1px solid black;
   border-radius: 6px;
 }
 
-.d {
-  font-size: 2rem;
+.e a {
+  text-decoration: underline;
+  color: black;
 }
 
-.f {
+.h {
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: underline;
+  color: black;
+}
+
+.i {
+  color: red;
+}
+
+.j {
+  min-width: 75%;
+}
+
+.k {
   font-family: monospace;
   font-weight: bold;
   font-size: 3rem;
@@ -158,21 +216,25 @@ var Mint=function(){"use strict";var t,e,n,r,o,i,a={},s=[],u=/acit|ex(?:s|g|n|p|
   width: 100vw;
 }
 
-.f h2 {
+.k h2 {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.k * {
+  box-sizing: border-box;
+}
 `)
 
-  const Nothing = AB
-  const Just = W
-  const Err = AG
-  const Ok = AF
+  const Nothing = AN
+  const Just = AA
+  const Err = AS
+  const Ok = AR
 
-  _enums.nothing = AB
-  _enums.just = W
-  _enums.err = AG
-  _enums.ok = AF
+  _enums.nothing = AN
+  _enums.just = AA
+  _enums.err = AS
+  _enums.ok = AR
 
   
 _program.render(A, {})

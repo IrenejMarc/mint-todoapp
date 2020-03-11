@@ -1,18 +1,22 @@
 component TodoList {
-  connect Todo exposing { todos, addTodo }
-
+  connect Stores.Todos exposing { entries as todos }
 
   style todos {
-    padding: 4px;
+    padding: 8px;
     list-style: none;
     border: 1px solid black;
     border-radius: 6px;
+
+    a {
+      text-decoration: underline;
+      color: black;
+    }
   }
 
   fun render : Html {
     <ul::todos>
-      for (todo of todos) {
-        <TodoEntry todo={todo} />
+      for (todo of Map.values(todos)) {
+        <TodoList.Entry todo={todo} />
       }
     </ul>
   }
