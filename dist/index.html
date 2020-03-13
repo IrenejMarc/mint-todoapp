@@ -9,7 +9,14 @@
     
   </head>
   <body>
-    <script src="index.js">
+    <script type="text/javascript">
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/service-worker.js')
+        })
+      }
+    </script>
+    <script src="/index.js">
 
     </script>
     <noscript>
