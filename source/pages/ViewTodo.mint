@@ -32,7 +32,7 @@ component Pages.ViewTodo {
         LoadState::Error error =>
           <div::error> <{ error }> </div>
 
-        LoadState::Loading => <h2>"Loading"</h2>
+        => <h2>"Loading"</h2>
       }
     </div>
   }

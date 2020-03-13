@@ -7,6 +7,8 @@ component Pages.Root {
     <main::base>
       <h2>"Todo"</h2>
 
+      <RandomAdvice />
+
       <TodoList />
       <AddTodoInput />
     </main>

@@ -3,7 +3,6 @@ component Main {
 
   style base {
     font-family: monospace;
-    font-weight: bold;
 
     font-size: 3rem;
 
